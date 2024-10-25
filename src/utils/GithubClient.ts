@@ -326,7 +326,6 @@ const e = new (class GithubClient extends TypedEmitter<IEvents> {
 
                 //Fetch them in parallel to not waste extra time with polling
                 payload = await Promise.all(prPromises);
-
             } else {
                 //Otherwise just use the basic info
                 payload = basicPRInfo.map(this.transformBasicPR);
