@@ -222,7 +222,7 @@ const e = new (class GithubClient extends TypedEmitter<IEvents> {
             testmergelabel: pr.labels.some(
                 label =>
                     label.name?.toLowerCase().includes("testmerge") ||
-                label.name?.toLowerCase().includes("test merge")
+                    label.name?.toLowerCase().includes("test merge")
             ),
             mergeable: pr.mergeable
         };
